@@ -1,3 +1,4 @@
+/*#region Main*/
 * {
     box-sizing: border-box;
     user-select: none;
@@ -5,349 +6,326 @@
     -webkit-user-drag: none;
     -webkit-user-select: none;
     -ms-user-select: none;
-    font-family: 'Roboto', sans-serif;
-}
-
+    font-family: 'Roboto', sans-serif;}
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     background-color: #e3e2e3;
-    overflow-x: hidden;
-}
-
-
-#homepage {
-    width: 100vw;
-    height: 100vh;
-    max-width: 100%;
-    max-height: 100%;
-    overflow: hidden;
-    background-color: #333333;
-}
-
-    nav {
-        background-color: #252525;
-        position: fixed;
-        top: 0;
-        width: 100%;
-        margin: 0;
-        height: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        overflow: hidden;
-        z-index: 3;
-    } 
-
-nav a {
-    text-decoration: none;
-    color: white;
-    padding: 50px;
-}
-
-nav a:hover {
-    background-color: #565656;
-}
-
-header {
-    position: relative;
-    top: 110px;
-    left: 10px;
-    margin: 0px;
-    width: 55vw;
-    color: snow;
-}
-
-#hi {
-    margin: 0;
-}
-
-#name {
-    text-shadow: #596169 2px 2px;
-    font-size: 4rem;
-    margin: 0;
-}
-
-#about {
-    position: absolute;
-    font-style: italic;
-    margin: 0;
-    padding: 16px 0 16px 0;
-}
-
-.socials {
-    position: absolute;
-    top: 350px;
-    left: -150px;
-    color: snow;
-    text-shadow: #565656 1px 1px;
-    display: inline-block;
-}
-
-.socialLogo {
-    position: relative;
-    top: 20px;
-    width: 45px;
-    height: 45px;
-    padding: 5px;
-    margin-right: 5px;
-    background-color: #252525;
-    border-radius: 50%;
-    border: 1px solid black;
-}
-
-.text-box {
-    position: relative;
-    left: -200px;
-}
-
-#discord {
-    top: 17px;
-}
-
-.copyBtn {
-    position: relative;
-    background-color: transparent;
-    padding: 0;
-    border: none;
-    height: 30px;
-    cursor: pointer;
-    top: 7px;
-    margin: 3px;
-    outline: none;
-    z-index: 2;
-}
-
-.tooltip {
-    position: relative;
-    display: inline-block;
-  }
-
-.tooltiptext {
-    visibility: hidden;
-    width: 140px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    position: absolute;
-    z-index: 1;
-    bottom: 140%;
-    left: 60%;
-    margin-left: -75px;
-    opacity: 0;
-    transition: opacity 0.3;
-}
-
-.tooltip:hover .tooltiptext {
-    visibility: visible;
-    opacity: 1;
-}
-
-.tooltip .tooltiptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-  }
-
-#person {
-    position: sticky;
-    z-index: 0;
-    bottom: 0px;
-    left: 100px;
-    left: 50vw;
-    width: auto;
-    height: 85%;
-    padding-left: 30px;
-}
-
-#wave {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    white-space: nowrap;
-    opacity: 70%;
-    position: relative;
-    bottom: -70px;
-}
-
-#logo {
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    background-image: url("resources/Profile.jpg");
-    background-size: cover;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-right: auto;
-    padding: 0;
-}
-
-@media screen and (max-width: 600px) {
-    .navtext {
-        padding: 30px;
-    }
-}
-
-@media (max-width: 835px) {
-    #lastname {
-        display: none;
-    }
-
-    #about span {
-        display: inline;
-    }
-    header {
-        top: 120px;
-    }
-    .socials {
-        top: 375px;
-    }
-}
-
-@media (min-width: 825px) {
-    #about span {
-        display: none;
-    }
-}
-
+    overflow-x: hidden;}
 .break {
     font-size: 5px;
     background-color: darkgray;
     border: 2px inset #333333;
     text-indent: -10px;
-    z-index: 2;
-}
+    z-index: 2;}
+/*#endregion*/
 
-#projects {
-    background-image: url("resources/blueParticle.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100vw;
-    max-width: 100%;
-    background-color: grey;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    overflow: hidden;
-    padding: 80px 0px 80px 0px;
-    position: relative;
-}
+/*#region Homepage*/
+    #homepage {
+        width: 100vw;
+        height: 100vh;
+        max-width: 100%;
+        max-height: 100%;
+        overflow: hidden;
+        background-color: #333333;}
+    /*#region NavigationBar*/
+        nav {
+            background-color: #252525;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            margin: 0;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            overflow: hidden;
+            z-index: 3;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            padding: 50px;
+        }
+        nav a:hover {
+            background-color: #565656;
+        }
+        #logo {
+            text-indent: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            background-image: url("resources/Profile.jpg");
+            background-size: cover;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: auto;
+            padding: 0;
+        }
+    /*#endregion*/
+    /*#region Header*/
+        header {
+        position: relative;
+        top: 110px;
+        left: 10px;
+        margin: 0px;
+        width: 55vw;
+        color: snow;
+        }
+        #hi {
+            margin: 0;
+        }
+        #name {
+            text-shadow: #596169 2px 2px;
+            font-size: 4rem;
+            margin: 0;
+        }
+        #about {
+            position: absolute;
+            font-style: italic;
+            margin: 0;
+            padding: 16px 0 16px 0;
+        }
+    /*#endregion*/
+    /*#region Socials*/
+        .socials {
+        position: absolute;
+        top: 350px;
+        left: -150px;
+        color: snow;
+        text-shadow: #565656 1px 1px;
+        display: inline-block;
+        }
+        .socialLogo {
+            position: relative;
+            top: 20px;
+            width: 45px;
+            height: 45px;
+            padding: 5px;
+            margin-right: 5px;
+            background-color: #252525;
+            border-radius: 50%;
+            border: 1px solid black;
+        }
+        #discord {
+            top: 17px;
+        }
+        /*#region CopyToClipboard*/
+            .text-box {
+                position: relative;
+                left: -200px;
+            }        
+            .copyBtn {
+                position: relative;
+                background-color: transparent;
+                padding: 0;
+                border: none;
+                height: 30px;
+                cursor: pointer;
+                top: 7px;
+                margin: 3px;
+                outline: none;
+                z-index: 2;
+            }
+            .tooltip {
+                position: relative;
+                display: inline-block;
+            }
+            .tooltiptext {
+                visibility: hidden;
+                width: 140px;
+                background-color: #555;
+                color: #fff;
+                text-align: center;
+                border-radius: 6px;
+                position: absolute;
+                z-index: 1;
+                bottom: 140%;
+                left: 60%;
+                margin-left: -75px;
+                opacity: 0;
+                transition: opacity 0.3;
+            }
+            .tooltip:hover .tooltiptext {
+                visibility: visible;
+                opacity: 1;
+            }
+            .tooltip .tooltiptext::after {
+                content: "";
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                margin-left: -5px;
+                border-width: 5px;
+                border-style: solid;
+                border-color: #555 transparent transparent transparent;
+            }
+        /*#endregion*/
+    /*#endregion*/
+    /*#region Background*/
+        #person {
+            position: sticky;
+            z-index: 0;
+            bottom: 0px;
+            left: 100px;
+            left: 50vw;
+            width: auto;
+            height: 85%;
+            padding-left: 30px;
+        }
 
-.pbg {
-    position: absolute;
-    z-index: 1;
-    overflow: hidden;
-}
+        #wave {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            white-space: nowrap;
+            opacity: 70%;
+            position: relative;
+            bottom: -70px;
+        }
+    /*#endregion*/
+/*#endregion*/
 
-.project {
-    border: 2px solid black;
-    border-radius: 60px;
-    width: 480px;
-    height: 732px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 60px 0px 60px 0px;
-    z-index: 2;
-}
+/*#region ProjectPage*/
+    #projects {
+        background-image: url("resources/blueParticle.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100vw;
+        max-width: 100%;
+        background-color: grey;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        overflow: hidden;
+        padding: 80px 0px 80px 0px;
+        position: relative;}
+    /*#region ProjectCards*/
+        .project {
+            border: 2px solid black;
+            border-radius: 60px;
+            width: 480px;
+            height: 732px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 60px 0px 60px 0px;
+            z-index: 2;
+        }
+        .ptitle {
+            color: snow;
+            width: 100%;
+            text-align: center;
+            background-color: #191919;
+            margin: 0;
+        }
+        .ptitle h4 {
+            margin: 10px;
+        }
+        .pimg {
+            object-fit: cover;
+            width: 100%;
+            height: 25%;
+            border: 1px solid black;
+        }
+        .pdisc {
+            padding: 0px 10px 20px 10px;
+            background-color: #222222;
+            height: 100%;
+            color: snow;
+        }
+        .pbutton {
+            background-color: #0085ba;
+            border: none;
+            color: white;
+            display: block;
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 1.25rem;
+            width: 100%;
+            padding: 0.5rem;
+            outline: none;
+        }
+        #pbutton:hover {
+            background-color: #037cb4;
+        }
+        #pbutton:active {
+            background-color: #015c86;
+        }
+        .pmore {
+            width: 100%;
+            margin-top: auto;
+            border: 1px solid black;
+            height: 40px;
+        }
+    /*#endregion*/
+    /*#region ViewMore*/
+        .viewMore {
+            z-index: 4;
+            align-self: flex-end;
+            justify-self: center;
+            position: absolute;
+            margin-top: 50px;
+        }
+        .viewMore a {
+            text-decoration: none;
+            color: snow;
+            font-size: 1.3rem;
+        }
+        .viewMore a:hover {
+            text-decoration: underline;
+        }
+    /*#endregion*/
+    /*#region Background*/
+        .pbg {
+            position: absolute;
+            z-index: 1;
+            overflow: hidden;
+        }
+    /*#endregion*/
+/*#endregion*/
 
-.ptitle {
-    color: snow;
-    width: 100%;
-    text-align: center;
-    background-color: #191919;
-    margin: 0;
-}
-
-.ptitle h4 {
-    margin: 10px;
-}
-
-.pimg {
-    object-fit: cover;
-    width: 100%;
-    height: 25%;
-    border: 1px solid black;
-}
-
-.pdisc {
-    padding: 0px 10px 20px 10px;
-    background-color: #222222;
-    height: 100%;
-    color: snow;
-}
-
-.pbutton {
-    background-color: #0085ba;
-    border: none;
-    color: white;
-    display: block;
-    cursor: pointer;
-    font-family: inherit;
-    font-size: 1.25rem;
-    width: 100%;
-    padding: 0.5rem;
-    outline: none;
-}
-
-#pbutton:hover {
-    background-color: #037cb4;
-}
-
-#pbutton:active {
-    background-color: #015c86;
-}
-
-.pmore {
-    width: 100%;
-    margin-top: auto;
-    border: 1px solid black;
-    height: 40px;
-}
-
-.viewMore {
-    z-index: 4;
-    align-self: flex-end;
-    justify-self: center;
-    position: absolute;
-    margin-top: 50px;
-}
-
-.viewMore a {
-    text-decoration: none;
-    color: snow;
-    font-size: 1.3rem;
-}
-
-.viewMore a:hover {
-    text-decoration: underline;
-}
-
-#about_me {
-    width: 100vw;
-    height: 100vh;
-    max-width: 100%;
-    max-height: 100%;
-    background-color: grey;
-    z-index: 3;
-    position: static;
-}
-
-h1 {
-    margin: 0;
-}
-
-@media screen and (max-width: 1900px) {
-    .pbg {
-        display: none;
+/*#region AboutPage*/
+    #about_me {
+        width: 100vw;
+        height: 100vh;
+        max-width: 100%;
+        max-height: 100%;
+        background-color: grey;
+        z-index: 3;
+        position: static;
     }
-}
+    h1 {
+        margin: 0;
+    }
+/*#endregion*/
+
+/*#region @media*/
+    @media screen and (max-width: 1900px) {
+        .pbg {
+            display: none;
+        }}
+    @media screen and (max-width: 600px) {
+        .navtext {
+            padding: 30px;
+        }}
+    @media (max-width: 835px) {
+        #lastname {
+            display: none;
+        }
+        #about span {
+            display: inline;
+        }
+        header {
+            top: 120px;
+        }
+        .socials {
+            top: 375px;
+        }}
+    @media (min-width: 825px) {
+        #about span {
+            display: none;
+        }}
+/*#endregion*/

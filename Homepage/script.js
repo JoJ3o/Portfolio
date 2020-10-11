@@ -20,4 +20,4 @@ function copyDiscord() {
 function outFunc() {
     tooltip.innerHTML = "Copy to clipboard";
     tooltipD.innerHTML = "Copy to clipboard";
-  }
+}
