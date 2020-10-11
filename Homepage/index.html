@@ -10,11 +10,11 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <section class="homepage">
+    <section id="homepage">
         <nav>
             <a href="#" id="logo">Logo</a>
-            <a href="#" class="navtext">About Me</a>
-            <a href="#" class="navtext">Projects</a>
+            <a href="#about_me" class="navtext">About Me</a>
+            <a href="../Projects/Projects.html" class="navtext">Projects</a>
             <a href="#" class="navtext">Contact Me</a>
         </nav>
 
@@ -24,23 +24,103 @@
             <p id="about">A young ICT student with a <span><br></span>passion for programming,&nbsp;<span><br></span>livestreaming&nbsp;and&nbsp;game&nbsp;design.</p>
         </header>        
 
+        <div class="socials">
+            <input type="text" class="text-box" id="mailInput" size="20" value="joas.boevink@kpnmail.nl">
+            <img src="resources/mailLogo (2).png" alt="Mail Logo" class="socialLogo" id="mail">
+            <label for="mail" class="socialLabel">joas.boevink@kpnmail.nl</label>
+            <div class="tooltip">
+                <button class="copyBtn" onclick="copyMail()" onmouseout="outFunc()">
+                    <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+                    <img src="resources/copyIcon.png" alt="copyIcon" width="25px" height="25px">
+                </button>
+            </div>
+            <br>
+            <input type="text" class="text-box" id="discordInput" size="20" value="JoJ3o#1927">
+            <img src="resources/discordLogo.png" alt="Discord Logo" class="socialLogo" id="discord">
+            <label for="discord" class="socialLabel">JoJ3o#1927</label>
+            <div class="tooltip">
+                <button class="copyBtn" onclick="copyDiscord()" onmouseout="outFunc()">
+                    <span class="tooltiptext" id="myTooltipD">Copy to clipboard</span>
+                    <img src="resources/copyIcon.png" alt="copyIcon" width="25px" height="25px">
+                </button>
+            </div>
+        </div>
         <img src="resources/dynamicBackground.png" alt="Dynaminc Background" id="wave">
         <img src="resources/Portfolio Image2.png" alt="Image of myself" id="person">
     </section>  
 
-    <section class="Projects">
-        <h1>hi</h1>
+    <div class="break">.</div>
+
+    <section id="projects">
+        <!--Project #1-->
+        <div class="project" id="project1">
+            <div class="ptitle">
+                <h4 id="p1title">LD#41 - Asteroids Rebirth</h4>
+            </div>
+            <img src="resources/AsteroidsRebirthBG.jpg" alt="Project #1 Image" class="pimg" id="p1img">
+            <div class="pdisc">
+                <p id="p1disc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque repellendus veniam est? Non sequi officia dolorum vero suscipit ducimus. Non!</p>
+            </div>
+            <div class="pmore">
+                <form>
+                    <button class="pbutton" id="p1button" formaction="../Projects/Project/AsteroidsRebirth.html">Read More...</button>
+                </form>
+            </div>
+        </div>
+
+        <!--Project #2-->
+        <div class="project" id="project2">
+            <div class="ptitle">
+                <h4 id="p2title">LD#42 - The Fruity Escape</h4>
+            </div>
+            <img src="resources/TheFruityEscapeBG.png" alt="Project #2 Image" class="pimg" id="p2img">
+            <div class="pdisc">
+                <p id="p2disc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque repellendus veniam est? Non sequi officia dolorum vero suscipit ducimus. Non!</p>
+            </div>
+            <div class="pmore">
+                <form>
+                    <button class="pbutton" id="p2button" formaction="../Projects/Project/TheFruityEscape.html">Read More...</button>
+                </form>
+            </div>
+        </div>
+
+        <!--Project #3-->
+        <div class="project" id="project3">
+            <div class="ptitle">
+                <h4 id="p3title">LD#46 - Keep THEM Alive</h4>
+            </div>
+            <img src="resources/KeepTHEMAliveBG.png" alt="Project #3 Image" class="pimg" id="p3img">
+            <div class="pdisc">
+                <p id="p3disc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque repellendus veniam est? Non sequi officia dolorum vero suscipit ducimus. Non!</p>
+            </div>
+            <div class="pmore">
+                <form>
+                    <button class="pbutton" id="p3button" formaction="../Projects/Project/Keep THEM Alive.html">Read More...</button>
+                </form>
+            </div>
+        </div>
+
+        <!--View all projects link-->
+        <div class="viewMore">
+            <a href="../Projects/Projects.html">View all projects --></a>
+        </div>
+
+        <!--Video Background-->
+        <video autoplay loop muted class="pbg" src="resources/Dust - 3227.mp4" width="1920" height="1080">
+            Your browser does not support this video.
+        </video>
+    </section>
+
+    <div class="break">.</div>
+
+    <section id="about_me">
         <h1>hi</h1>
         <h1>hi</h1>
         <h1>hi</h1>
         <h1>hi</h1>
         <h1>hi</h1>
         <h1>yo</h1>
-
     </section>
 
-    <section class="AboutMe">
-
-    </section>
 </body>
 </html>
