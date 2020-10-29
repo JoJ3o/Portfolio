@@ -372,8 +372,8 @@
             height: 60px;
             padding: 0.5rem;
             border-radius: 20px / 15px;}
-        #cv p {
-            position: absolute;
+        #cv:focus {
+            outline: none;
         }
         .footer a {
             text-decoration: none;
