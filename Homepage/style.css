@@ -1,23 +1,25 @@
 /*#region Main*/
-* {
-    box-sizing: border-box;
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-drag: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    font-family: 'Roboto', sans-serif;}
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    background-color: #e3e2e3;
-    overflow-x: hidden;}
-.break {
-    font-size: 5px;
-    background-color: darkgray;
-    border: 2px inset #333333;
-    text-indent: -10px;
-    z-index: 2;}
+    * {
+        box-sizing: border-box;
+        user-select: none;
+        -moz-user-select: none;
+        -webkit-user-drag: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        font-family: 'Roboto', sans-serif;}
+    html {
+        scroll-behavior: smooth;}
+    body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        background-color: #333333;
+        overflow-x: hidden;}
+    .break {
+        font-size: 5px;
+        background-color: darkgray;
+        border: 2px inset #333333;
+        text-indent: -10px;
+        z-index: 2;}
 /*#endregion*/
 
 /*#region Homepage*/
@@ -40,16 +42,16 @@ body {
             align-items: center;
             justify-content: flex-end;
             overflow: hidden;
-            z-index: 3;
-        }
+            z-index: 10;
+            box-shadow: inset 0 0 10px #101010;}
         nav a {
             text-decoration: none;
             color: white;
-            padding: 50px;
-        }
+            padding: 50px;}
         nav a:hover {
-            background-color: #565656;
-        }
+            background-color: #565656;}
+        nav a:focus {
+            text-decoration: underline;}
         #logo {
             text-indent: 100%;
             white-space: nowrap;
@@ -60,42 +62,36 @@ body {
             height: 40px;
             border-radius: 50%;
             margin-right: auto;
-            padding: 0;
-        }
+            padding: 0;}
     /*#endregion*/
     /*#region Header*/
         header {
-        position: relative;
-        top: 110px;
-        left: 10px;
-        margin: 0px;
-        width: 55vw;
-        color: snow;
-        }
+            position: relative;
+            top: 110px;
+            left: 10px;
+            margin: 0px;
+            width: 55vw;
+            color: snow;}
         #hi {
-            margin: 0;
-        }
+            margin: 0;}
         #name {
             text-shadow: #596169 2px 2px;
             font-size: 4rem;
-            margin: 0;
-        }
+            margin: 0;}
         #about {
             position: absolute;
             font-style: italic;
             margin: 0;
-            padding: 16px 0 16px 0;
-        }
+            padding: 16px 0 16px 0;}
     /*#endregion*/
     /*#region Socials*/
         .socials {
-        position: absolute;
-        top: 350px;
-        left: -150px;
-        color: snow;
-        text-shadow: #565656 1px 1px;
-        display: inline-block;
-        }
+            position: absolute;
+            top: 350px;
+            left: -150px;
+            color: snow;
+            text-shadow: #565656 1px 1px;
+            display: inline-block;}
         .socialLogo {
             position: relative;
             top: 20px;
@@ -105,16 +101,13 @@ body {
             margin-right: 5px;
             background-color: #252525;
             border-radius: 50%;
-            border: 1px solid black;
-        }
+            border: 1px solid black;}
         #discord {
-            top: 17px;
-        }
+            top: 17px;}
         /*#region CopyToClipboard*/
             .text-box {
                 position: relative;
-                left: -200px;
-            }        
+                left: -200px;}        
             .copyBtn {
                 position: relative;
                 background-color: transparent;
@@ -125,12 +118,10 @@ body {
                 top: 7px;
                 margin: 3px;
                 outline: none;
-                z-index: 2;
-            }
+                z-index: 2;}
             .tooltip {
                 position: relative;
-                display: inline-block;
-            }
+                display: inline-block;}
             .tooltiptext {
                 visibility: hidden;
                 width: 140px;
@@ -144,12 +135,10 @@ body {
                 left: 60%;
                 margin-left: -75px;
                 opacity: 0;
-                transition: opacity 0.3;
-            }
+                transition: opacity 0.3;}
             .tooltip:hover .tooltiptext {
                 visibility: visible;
-                opacity: 1;
-            }
+                opacity: 1;}
             .tooltip .tooltiptext::after {
                 content: "";
                 position: absolute;
@@ -158,8 +147,7 @@ body {
                 margin-left: -5px;
                 border-width: 5px;
                 border-style: solid;
-                border-color: #555 transparent transparent transparent;
-            }
+                border-color: #555 transparent transparent transparent;}
         /*#endregion*/
     /*#endregion*/
     /*#region Background*/
@@ -171,9 +159,7 @@ body {
             left: 50vw;
             width: auto;
             height: 85%;
-            padding-left: 30px;
-        }
-
+            padding-left: 30px;}
         #wave {
             width: 100vw;
             height: 100vh;
@@ -181,8 +167,7 @@ body {
             white-space: nowrap;
             opacity: 70%;
             position: relative;
-            bottom: -70px;
-        }
+            bottom: -70px;}
     /*#endregion*/
 /*#endregion*/
 
@@ -204,38 +189,37 @@ body {
     /*#region ProjectCards*/
         .project {
             border: 2px solid black;
+            background-image: linear-gradient(120deg, rgb(28,28,28),rgb(68,67,67));
             border-radius: 60px;
             width: 480px;
-            height: 732px;
+            height: 740px;
             overflow: hidden;
             display: flex;
             flex-direction: column;
             align-items: center;
             margin: 60px 0px 60px 0px;
             z-index: 2;
-        }
+            box-shadow: inset 0 0 20px black;}
         .ptitle {
             color: snow;
             width: 100%;
             text-align: center;
             background-color: #191919;
             margin: 0;
-        }
+            box-shadow: inset 0 0 20px black;}
         .ptitle h4 {
-            margin: 10px;
-        }
+            margin: 10px;}
         .pimg {
             object-fit: cover;
             width: 100%;
             height: 25%;
             border: 1px solid black;
-        }
+            box-shadow: inset 0 0 20px black;}
         .pdisc {
             padding: 0px 10px 20px 10px;
-            background-color: #222222;
             height: 100%;
             color: snow;
-        }
+            overflow: hidden;}
         .pbutton {
             background-color: #0085ba;
             border: none;
@@ -247,19 +231,16 @@ body {
             width: 100%;
             padding: 0.5rem;
             outline: none;
-        }
+            box-shadow: inset 0 0 10px black;}
         #pbutton:hover {
-            background-color: #037cb4;
-        }
+            background-color: #037cb4;}
         #pbutton:active {
-            background-color: #015c86;
-        }
+            background-color: #015c86;}
         .pmore {
             width: 100%;
             margin-top: auto;
             border: 1px solid black;
-            height: 40px;
-        }
+            height: 40px;}
     /*#endregion*/
     /*#region ViewMore*/
         .viewMore {
@@ -267,65 +248,199 @@ body {
             align-self: flex-end;
             justify-self: center;
             position: absolute;
-            margin-top: 50px;
-        }
+            margin-top: 50px;}
         .viewMore a {
             text-decoration: none;
             color: snow;
-            font-size: 1.3rem;
-        }
+            font-size: 1.3rem;}
         .viewMore a:hover {
-            text-decoration: underline;
-        }
+            text-decoration: underline;}
     /*#endregion*/
     /*#region Background*/
         .pbg {
             position: absolute;
             z-index: 1;
-            overflow: hidden;
-        }
+            overflow: hidden;}
     /*#endregion*/
 /*#endregion*/
 
 /*#region AboutPage*/
     #about_me {
         width: 100vw;
-        height: 100vh;
-        max-width: 100%;
-        max-height: 100%;
-        background-color: grey;
+        height: calc(100vh - 10px);
+        background-color: #404040;
         z-index: 3;
-        position: static;
-    }
-    h1 {
-        margin: 0;
-    }
+        position: relative;}
+    /*#region Personalia*/
+        .personalia {
+            width: 21%;
+            height: 100%;
+            position: relative;
+            background-color: #333333;
+            border-right: 2px solid steelblue;
+            margin: 0;
+            color: snow;}
+        /*#region PersonalDetails*/
+            #personalPhoto {
+                width: 225px;
+                height: 225px;
+                border-radius: 50%;
+                background-image: url(resources/Pasfoto.jpg);
+                background-position: top center;
+                background-size: cover;
+                margin: 0;
+                position: relative;
+                left: 40px;
+                top: 50px;}
+            .personalia ul {
+                position: relative;
+                list-style-type: none;
+                margin: 0;
+                top: 100px;
+                margin-bottom: 80px;}
+            .personalia li {
+                padding: 10px;}
+            .personalia li img {
+                width: 40px;
+                height: 40px;
+                text-decoration: none;}
+            .personalia label {
+                position: relative;
+                top: -15px;
+                left: 10px;
+                text-decoration: underline;}
+            .personalia h3 {
+                color: snow;
+                margin: 0;}
+        /*#endregion*/
+        /*#region PersonalSocials*/
+            #socials label {
+                cursor: pointer;}
+            #socials a {
+                text-decoration: underline;
+                color: #0080FF;}
+            #socials a:link, #socials a:visited{
+                text-decoration: none;}
+        /*#endregion*/
+    /*#endregion*/  
+    /*#region CV Footer*/          
+        .footer {
+            width: 100vw;
+            height: 15%;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            top: 85%;
+            border-top: 2px solid steelblue;
+            border-bottom: 2px solid steelblue;
+            background-color: #333333}
+        .footer button {
+            background-color: #0085ba;
+            border: none;
+            display: block;
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 1.25rem;
+            width: 180px;
+            height: 50%;
+            padding: 0.5rem;
+            border-radius: 20px / 15px;}
+        .footer a {
+            text-decoration: none;
+            color: snow;}
+        .footer h4 {
+            margin: 10px;
+            font-size: 1.5rem;
+            color: snow;}
+    /*#endregion*/
+    /*#region Profile*/
+        #mainAbout {
+            position: absolute;
+            width: 79%;
+            height: 85%;
+            display: flex;
+            flex-wrap: wrap;
+            left: 21%;
+            top: 0px;
+            z-index: 2;
+            margin: 10px 30px 10px 70px;
+            font-size: 1.5rem;}
+        #mainAbout h3 {
+            margin: 10px;}
+        #mainAbout p {
+            margin: 0px 20px 20px 20px;}
+        .textBox {
+            width: 750px;
+            height: 350px;
+            border-radius: 30px;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 2px ridge black;
+            box-shadow: inset 0 0 20px black;}
+        #who {
+            background-image: linear-gradient(118deg, rgb(32, 218, 233),rgb(21,59,236));}
+        #what {
+            width: 500px;
+            height: 750px;
+            background-image: linear-gradient(90deg, rgb(160, 222, 219),rgb(13,90,131));
+            margin-left: 30px;}
+        #vid {
+            background-color: #101010;
+            justify-content: center;
+            top: 400px;
+            position: absolute;}
+        #vid video {
+            font-family: 'Oswald', sans-serif;
+            font-size: 2.5rem;
+            color: snow;
+            height: 350px;
+            width: auto;}
+    /*#endregion*/
 /*#endregion*/
 
-/*#region @media*/
-    @media screen and (max-width: 1900px) {
+/*#region @Rules*/
+    @media screen and (max-width: 1800px) {
         .pbg {
-            display: none;
-        }}
-    @media screen and (max-width: 600px) {
+            display: none;}}
+    @media screen and (max-width: 1000px) {
         .navtext {
-            padding: 30px;
-        }}
-    @media (max-width: 835px) {
+            padding: 30px;}
+        .personalia {
+            width: 100%;
+            left: 50px;}
+        #about_me {
+            background-color: #333333;}
+        #mainAbout {
+            position: relative;
+            left: 0px;
+            background-color: #333333;}
+        #who, #what, #vid {
+            width: 900px;
+            height: 500px;
+            position: relative;
+            top: 0;}
+        #vid {
+            height: 250px;}
+        #vid video {
+            height: 250px;}
+        .footer {
+            background-color: #404040;}}
+    @media screen and (max-width: 835px) {
         #lastname {
-            display: none;
-        }
+            display: none;}
         #about span {
-            display: inline;
-        }
+            display: inline;}
         header {
-            top: 120px;
-        }
+            top: 120px;}
         .socials {
-            top: 375px;
-        }}
-    @media (min-width: 825px) {
+            top: 375px;}}
+    @media screen and (min-width: 825px) {
         #about span {
-            display: none;
-        }}
+            display: none;}}
+    @font-face {
+        font-family: LeagueGothic;
+        src: url(resources/LeagueGothic-Regular.otf);}
 /*#endregion*/

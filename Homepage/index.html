@@ -6,6 +6,7 @@
     <title>Portfolio: Joas Boevink</title>
     <link rel="icon" href="resources/Profile.jpg">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
@@ -16,8 +17,8 @@
         <nav>
             <a href="#" id="logo">Logo</a>
             <a href="#about_me" class="navtext">About Me</a>
-            <a href="../Projects/Projects.html" class="navtext">Projects</a>
-            <a href="#" class="navtext">Contact Me</a>
+            <a href="#projects" class="navtext">Projects</a>
+            <a href="#homepage" class="navtext">Contact Me</a>
         </nav>
 
         <!--Header-->
@@ -69,7 +70,11 @@
             </div>
             <img src="resources/AsteroidsRebirthBG.jpg" alt="Project #1 Image" class="pimg" id="p1img">
             <div class="pdisc">
-                <p id="p1disc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque repellendus veniam est? Non sequi officia dolorum vero suscipit ducimus. Non!</p>
+                <p id="p1disc">
+                    A highscore strategy/metroidvania spaceshooter based on the popular arcade game "Asteroids". Made with the help of Shaun Spaldings tutorials.
+                    <br><br>The twist is that your spaceship switches between 3 colors randomly every time you collect a few points. Every time you shoot a few asteroids, new ones will spawn. These asteroids have their own color too and can only be destroyed if the spaceship matches the color of the asteroid. And because you need points to switch the color of the spaceship, you will get stuck with asteroids near you that cannot be destroyed. Therefore there are 2 other type of asteroids. One of them is a grey smaller and slower asteroid that is worth less points, but can be shot by any color spaceship. When you destroy a normal asteroid, 2 grey ones will spawn and that you can just keep flying around for when you need the points to switch color. This is where to strategy part comes in to the game. The other special asteroid is a normal sized rainbow asteroid that can also be shot by any color. 
+                    <br><br>You have 3 lives in the game and get a bomb at a certain amount of points that destroys all asteroids on the screen when you use it, in case it becomes a bit tight up there. 
+                </p>
             </div>
             <div class="pmore">
                 <form>
@@ -85,7 +90,11 @@
             </div>
             <img src="resources/TheFruityEscapeBG.png" alt="Project #2 Image" class="pimg" id="p2img">
             <div class="pdisc">
-                <p id="p2disc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque repellendus veniam est? Non sequi officia dolorum vero suscipit ducimus. Non!</p>
+                <p id="p2disc">
+                    A bullet hell game where you play as a fruit that gets pushed by a fruit into fruits that get spit out fruits. 
+                    <br><br>You play as a skateboarding pineapple with boosters on the back, because the pineapple doesn’t have long enough legs (not because animations are hard). On the top and bottom are innocent fruits that spit out part that will kill you. The game has 3 normal levels and a special fourth level that has all of them combined before you reach the credits. All normal levels have a different fruit in them that vary in the amount of bullets that are spit out at the same time, the length of the bullet or the direction of the bullet. The goal is to dodge the bullets and reach the end of the level to get to the next level. After you pass all the 4 levels, you will be rewarded with a beautiful end screen.
+                    <br><br>The hard part of the game is that you don’t have lots a time. On the left you can find an angry Mr. Strawberry, Cherry or Banana that are pushing a wall that will push you into the bullets if you’re not quick enough. If you do happen to hit a bullet (which will happen a lot), you will have to start all over again, even If you die in one of the last levels.
+                </p>
             </div>
             <div class="pmore">
                 <form>
@@ -101,7 +110,11 @@
             </div>
             <img src="resources/KeepTHEMAliveBG.png" alt="Project #3 Image" class="pimg" id="p3img">
             <div class="pdisc">
-                <p id="p3disc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque repellendus veniam est? Non sequi officia dolorum vero suscipit ducimus. Non!</p>
+                <p id="p3disc">
+                    A top down roguelike where you rescue and defend your little minions and try to reach the end of the prison while keeping them alive.
+                    <br><br>You’re playing a magical captain that has lost his minion crew. You can rescue your minions by touching them, after you rescue a minion it will start following you. On your way you will meet a few bad guys, like slimes and skeletons, that will attack either you or one of your minions. You can defend yourself and protect your minions by using your magical splash gun. You can hide behind table, but you can also break them with your attack if they’re in the way. 
+                    <br><br>This is the first game jam where I wasn’t doing it alone. My and a friend of mine worked together to create this game. The programming and management was done by me, the art and animations were done by him. It was nice working together, but we were both a bit stressed because of the lack of experience. I had only a week of experience with the new engine I decided to use and he normally doesn’t create a lot of art, so we were both really new to this and had trouble getting past the bugs and mistakes. In the end we were able to pull trough after a very long night and submitted something we could be a tiny bit proud of, so it felt like a victory in my book.
+                </p>
             </div>
             <div class="pmore">
                 <form>
@@ -126,12 +139,73 @@
 
     <!--AboutPage-->
     <section id="about_me">
-        <h1>hi</h1>
-        <h1>hi</h1>
-        <h1>hi</h1>
-        <h1>hi</h1>
-        <h1>hi</h1>
-        <h1>yo</h1>
+
+        <!--Personal Details-->
+        <div class="personalia">
+            <div id="personalPhoto"></div>
+            <ul id="personalDetails">
+                <h3><b>Personal Details</b></h3>
+                <li>
+                    <img src="resources/house.png" alt="AddressIcon" id="AddressIcon">
+                    <label for="AddressIcon" id="AddressText">Hobbematraat 71, 3817PR</label>
+                </li>
+                <li>
+                    <img src="resources/building.png" alt="CityIcon" id="CityIcon">
+                    <label for="CityIcon">Amersfoort, The Netherlands</label>
+                </li>
+                <li>
+                    <img src="resources/phone-call.png" alt="PhoneIcon" id="PhoneIcon">
+                    <label for="PhoneIcon">06-23117533</label>
+                </li>
+            </ul>
+            <ul id="socials">
+                <h3><b>Socials</b></h3>
+                <li>
+                    <a href="https://www.linkedin.com/in/joas-boevink-5666211ba/" target="_blank">                    
+                        <img src="resources/linkedin.png" alt="LinkedInIcon" id="LinkedInIcon">
+                        <label for="LinkedInIcon">LinkedIn</label>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/JoasBoevink" target="_blank">                    
+                        <img src="resources/twitter.png" alt="TwitterIcon" id="TwitterIcon">
+                        <label for="TwitterIcon">Twitter</label>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!--Profiel-->
+        <div id="mainAbout">
+            <div class="textBox" id="who">
+                <h3>Who am I?</h3>
+                <p>
+                    I am very thoughtful and self-aware person that likes to be in his own head a lot and wants to see the logic behind eveything, 
+                    but also loves working together with people that think the same way as me and have overlapping passions and interests.
+                    I like to challenge myself and am very determined when it comes to projects I decide to spend a lot of time on.
+                    I'm confident in my intelligence and knowledge, but am not afraid to ask things when I don't know them.
+                </p>
+            </div>
+            <div class="textBox" id="what">
+                <h3>What are my interests?</h3>
+                <p>
+                    In my daily life I like to hang out with my friends and fellow students online to play all kinds of games.
+                    I also livestream on Twitch where I speedrun retro games like Super Mario 64 most of the time and try to entertain the people that are watching and chatting.
+                    From time to time I also turn those streams into short funny highlights on Youtube.
+                </p>
+            </div>
+            <div class="textBox" id="vid">
+                <video src="resources/video placeholder.mp4" width="1920px" height="1080px" controls>Youtube Video Placeholder</video>
+            </div>
+        </div>
+
+        <!--CV Download-->
+        <div class="footer">
+            <h4>My CV:</h4>
+            <button id="cv">
+                <a href="resources/JoasBoevinkCV.pdf" target="_blank" download="resources/JoasBoevinkCV.pdf">Download PDF</a>
+            </button>
+        </div>
     </section>
 
 </body>
