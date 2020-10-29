@@ -94,7 +94,6 @@
             display: inline-block;}
         .socialLogo {
             position: relative;
-            top: 20px;
             width: 45px;
             height: 45px;
             padding: 5px;
@@ -102,8 +101,21 @@
             background-color: #252525;
             border-radius: 50%;
             border: 1px solid black;}
-        #discord {
-            top: 17px;}
+        .socialLabel {
+            position: relative;
+            top: -10px;
+            padding: 5px;
+        }
+        .mail, .discord {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            left: 160px;
+        }
+        .discord {
+            left: 75px;
+        }
         /*#region CopyToClipboard*/
             .text-box {
                 position: relative;
@@ -292,7 +304,10 @@
                 position: relative;
                 left: 40px;
                 top: 50px;}
-            .personalia ul {
+            .personalia h3 {
+                left: 50px;
+            }
+            .personalia ul, .personalia h3 {
                 position: relative;
                 list-style-type: none;
                 margin: 0;
@@ -304,23 +319,33 @@
                 width: 40px;
                 height: 40px;
                 text-decoration: none;}
-            .personalia label {
+            .personalia p {
                 position: relative;
-                top: -15px;
                 left: 10px;
                 text-decoration: underline;}
             .personalia h3 {
                 color: snow;
                 margin: 0;}
+            #personalDetails li {
+                display: flex;
+            }
         /*#endregion*/
         /*#region PersonalSocials*/
             #socials label {
                 cursor: pointer;}
             #socials a {
                 text-decoration: underline;
-                color: #0080FF;}
+                color: #0080FF;
+                display: flex;
+                align-items: center;}
             #socials a:link, #socials a:visited{
                 text-decoration: none;}
+            #socials p {
+                padding: 10px;
+                text-decoration: underline;}
+            #socials li {
+                padding: 0 0 0 10px;
+            }
         /*#endregion*/
     /*#endregion*/  
     /*#region CV Footer*/          
@@ -335,17 +360,21 @@
             border-top: 2px solid steelblue;
             border-bottom: 2px solid steelblue;
             background-color: #333333}
-        .footer button {
+        #cv {
             background-color: #0085ba;
             border: none;
-            display: block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             cursor: pointer;
-            font-family: inherit;
             font-size: 1.25rem;
             width: 180px;
-            height: 50%;
+            height: 60px;
             padding: 0.5rem;
             border-radius: 20px / 15px;}
+        #cv p {
+            position: absolute;
+        }
         .footer a {
             text-decoration: none;
             color: snow;}
@@ -379,9 +408,9 @@
             flex-direction: column;
             align-items: center;
             border: 2px ridge black;
-            box-shadow: inset 0 0 20px black;}
+            box-shadow: inset 0px 0px 25px rgb(5, 54, 80);}
         #who {
-            background-image: linear-gradient(118deg, rgb(32, 218, 233),rgb(21,59,236));}
+            background-image: linear-gradient(90deg, rgb(160, 222, 219),rgb(13,90,131));}
         #what {
             width: 500px;
             height: 750px;
@@ -391,7 +420,8 @@
             background-color: #101010;
             justify-content: center;
             top: 400px;
-            position: absolute;}
+            position: absolute;
+            box-shadow: inset 0px 0px 20px black;}
         #vid video {
             font-family: 'Oswald', sans-serif;
             font-size: 2.5rem;
@@ -436,10 +466,19 @@
         header {
             top: 120px;}
         .socials {
-            top: 375px;}}
+            top: 285px;}}
     @media screen and (min-width: 825px) {
         #about span {
             display: none;}}
+    @media screen and (max-width: 550px) {
+        p, label, video, img, h1, h2, h3, h4, h5, h6 {
+            zoom: .7;}
+        .discord {
+            left: 100px;
+        }
+        #wave {
+            top: 250px;
+        }}
     @font-face {
         font-family: LeagueGothic;
         src: url(resources/LeagueGothic-Regular.otf);}

@@ -32,30 +32,34 @@
         <div class="socials">
             <!--Mail-->
             <input type="text" class="text-box" id="mailInput" size="20" value="joas.boevink@kpnmail.nl">
-            <img src="resources/mailLogo (2).png" alt="Mail Logo" class="socialLogo" id="mail">
-            <label for="mail" class="socialLabel">joas.boevink@kpnmail.nl</label>
-            <div class="tooltip">
-                <button class="copyBtn" onclick="copyMail()" onmouseout="outFunc()">
-                    <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
-                    <img src="resources/copyIcon.png" alt="copyIcon" width="25px" height="25px">
-                </button>
+            <div class="mail">
+                <img src="resources/mailLogo.png" alt="Mail Logo" class="socialLogo" id="mail">
+                <p class="socialLabel">joas.boevink@kpnmail.nl</p>
+                <div class="tooltip">
+                    <button class="copyBtn" onclick="copyMail()" onmouseout="outFunc()">
+                        <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+                        <img src="resources/copyIcon.png" alt="copyIcon" width="25" height="25">
+                    </button>
+                </div>
             </div>
             <br>
             <!--Discord-->
             <input type="text" class="text-box" id="discordInput" size="20" value="JoJ3o#1927">
-            <img src="resources/discordLogo.png" alt="Discord Logo" class="socialLogo" id="discord">
-            <label for="discord" class="socialLabel">JoJ3o#1927</label>
-            <div class="tooltip">
-                <button class="copyBtn" onclick="copyDiscord()" onmouseout="outFunc()">
-                    <span class="tooltiptext" id="myTooltipD">Copy to clipboard</span>
-                    <img src="resources/copyIcon.png" alt="copyIcon" width="25px" height="25px">
-                </button>
+            <div class="discord">
+                <img src="resources/discordLogo.png" alt="Discord Logo" class="socialLogo" id="discord">
+                <p class="socialLabel">JoJ3o#1927</p>
+                <div class="tooltip">
+                    <button class="copyBtn" onclick="copyDiscord()" onmouseout="outFunc()">
+                        <span class="tooltiptext" id="myTooltipD">Copy to clipboard</span>
+                        <img src="resources/copyIcon.png" alt="copyIcon" width="25" height="25">
+                    </button>
+                </div>
             </div>
         </div>
 
         <!--HomepageBackground-->
         <img src="resources/dynamicBackground.png" alt="Dynaminc Background" id="wave">
-        <img src="resources/Portfolio Image2.png" alt="Image of myself" id="person">
+        <img src="resources/PortfolioImage.png" alt="Image of myself" id="person">
     </section>  
 
     <!--PageSplitter-->
@@ -118,7 +122,7 @@
             </div>
             <div class="pmore">
                 <form>
-                    <button class="pbutton" id="p3button" formaction="../Projects/Project/Keep THEM Alive.html">Read More...</button>
+                    <button class="pbutton" id="p3button" formaction="../Projects/Project/KeepTHEMAlive.html">Read More...</button>
                 </form>
             </div>
         </div>
@@ -129,7 +133,7 @@
         </div>
 
         <!--Video Background-->
-        <video autoplay loop muted class="pbg" src="resources/Dust - 3227.mp4" width="1920" height="1080">
+        <video autoplay loop muted class="pbg" src="resources/Dust3227.mp4" width="1920" height="1080">
             Your browser does not support this video.
         </video>
     </section>
@@ -143,33 +147,33 @@
         <!--Personal Details-->
         <div class="personalia">
             <div id="personalPhoto"></div>
+            <h3><b>Personal Details</b></h3>
             <ul id="personalDetails">
-                <h3><b>Personal Details</b></h3>
                 <li>
                     <img src="resources/house.png" alt="AddressIcon" id="AddressIcon">
-                    <label for="AddressIcon" id="AddressText">Hobbematraat 71, 3817PR</label>
+                    <p>Hobbematraat 71, 3817PR</p>
                 </li>
                 <li>
                     <img src="resources/building.png" alt="CityIcon" id="CityIcon">
-                    <label for="CityIcon">Amersfoort, The Netherlands</label>
+                    <p>Amersfoort, The Netherlands</p>
                 </li>
                 <li>
                     <img src="resources/phone-call.png" alt="PhoneIcon" id="PhoneIcon">
-                    <label for="PhoneIcon">06-23117533</label>
+                    <p>06-23117533</p>
                 </li>
             </ul>
+            <h3><b>Socials</b></h3>
             <ul id="socials">
-                <h3><b>Socials</b></h3>
                 <li>
                     <a href="https://www.linkedin.com/in/joas-boevink-5666211ba/" target="_blank">                    
                         <img src="resources/linkedin.png" alt="LinkedInIcon" id="LinkedInIcon">
-                        <label for="LinkedInIcon">LinkedIn</label>
+                        <p>LinkedIn</p>
                     </a>
                 </li>
                 <li>
                     <a href="https://twitter.com/JoasBoevink" target="_blank">                    
                         <img src="resources/twitter.png" alt="TwitterIcon" id="TwitterIcon">
-                        <label for="TwitterIcon">Twitter</label>
+                        <p>Twitter</p>
                     </a>
                 </li>
             </ul>
@@ -195,16 +199,16 @@
                 </p>
             </div>
             <div class="textBox" id="vid">
-                <video src="resources/video placeholder.mp4" width="1920px" height="1080px" controls>Youtube Video Placeholder</video>
+                <video src="resources/videoPlaceholder.mp4" width="1920" height="1080" controls>Youtube Video Placeholder</video>
             </div>
         </div>
 
         <!--CV Download-->
         <div class="footer">
             <h4>My CV:</h4>
-            <button id="cv">
-                <a href="resources/JoasBoevinkCV.pdf" target="_blank" download="resources/JoasBoevinkCV.pdf">Download PDF</a>
-            </button>
+            <form method="get" action="resources/JoasBoevinkCV.pdf">
+                <button type="submit" id="cv">Download PDF</button>
+            </form>
         </div>
     </section>
 
