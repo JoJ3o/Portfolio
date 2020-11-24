@@ -431,6 +431,37 @@
     /*#endregion*/
 /*#endregion*/
 
+/*#region Span*/
+    .black {color: black;}
+    .darkgrey {color: #202020;}
+    .grey {color: #404040;}
+    .lightgrey {color: #606060;}
+    .purple {color: purple;}
+    .green {color: green;}
+    .lime {color: lime;}
+    .blue {color: #0080FF}
+    .cyan {color: cadetblue;}
+    .darkred {color: darkred;}
+    .red {color: red;}
+    .orange {color: orange;}
+    .yellow {color: yellow;}
+    .white {color: snow;}
+    .rainbow {
+        background: red;
+        background: -webkit-linear-gradient(left, red, orange , yellow, green, cyan, blue, violet);
+        background: -o-linear-gradient(right, red, orange, yellow, green, cyan, blue, violet);
+        background: -moz-linear-gradient(right,red, orange, yellow, green, cyan, blue, violet);
+        background: linear-gradient(to right, red, orange , yellow, green, cyan, blue, violet);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .bold {font-weight: bold;}
+    .bolder {font-weight: bolder;}
+    .italic {font-style: italic;}
+    .underline {text-decoration: underline;}
+    .linethrough {text-decoration: line-through;}
+/*#endregion*/
+
 /*#region @Rules*/
     @media screen and (max-width: 1800px) {
         .pbg {
@@ -470,15 +501,6 @@
     @media screen and (min-width: 825px) {
         #about span {
             display: none;}}
-    @media screen and (max-width: 550px) {
-        p, label, video, img, h1, h2, h3, h4, h5, h6 {
-            zoom: .7;}
-        .discord {
-            left: 100px;
-        }
-        #wave {
-            top: 250px;
-        }}
     @font-face {
         font-family: LeagueGothic;
         src: url(resources/LeagueGothic-Regular.otf);}
